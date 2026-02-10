@@ -1,0 +1,189 @@
+body {
+  background: #e1e1ea;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ====== LAYOUT UTAMA ====== */
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  display: flex;
+  align-items: stretch;
+}
+
+/* ====== SIDEBAR MERAH ====== */
+.left-box {
+  background-color: #b30000;
+  color: white;
+  width: 300px;
+  box-shadow: 10px 10px 5px grey;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* ====== TOP LEFT (FOTO & NAMA) ====== */
+.top-left {
+  position: relative;
+  border-bottom: 3px solid white;
+  height: 250px;
+}
+
+.name {
+  position: absolute;
+  font-size: 40px;
+  bottom: 8px;
+  left: 16px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====== OBJECTIVE, PHONE, EMAIL, BIO ====== */
+.objective,
+.phone,
+.email {
+  border-bottom: 2px solid white;
+  margin: 15px;
+  padding: 10px;
+}
+
+.objective-img {
+  width: 30px;
+  border: 3px solid white;
+  margin-right: 10px;
+}
+
+.objective-text,
+.phone-text,
+.email-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+.biodata {
+  border-bottom: 2px solid white;
+  margin: 20px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.bio-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.bio-row {
+  display: grid;
+  grid-template-columns: 110px 10px 1fr;
+  margin-bottom: 8px;
+  font-size: 12px;
+  align-items: start;
+}
+
+.bio-label {
+  text-align: left;
+}
+
+.bio-colon {
+  text-align: center;
+}
+
+.bio-value {
+  text-align: left;
+}
+
+/* ====== KONTEN KANAN ====== */
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ====== BOX PUTIH ====== */
+.work-experience,
+.interest,
+.skills {
+  background: white;
+  box-shadow: 10px 10px 5px grey;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.education {
+  background: white;
+  box-shadow: 10px 10px 5px grey;
+  padding: 25px;
+  box-sizing: border-box;
+  display: block;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* baris sekolah */
+.edu-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* biar lebarnya sama */
+.edu-row .job-box {
+  flex: 1;
+}
+
+/* ====== WORK EXPERIENCE ====== */
+.work-experience {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.job-box {
+  border-bottom: 3px solid #b30000;
+  padding: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.job-box:hover {
+  background-color: #f2f2f2;
+}
+
+.job-title {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.job-date {
+  color: #b30000;
+  line-height: 1.5;
+}
+
+.job-description {
+  line-height: 1.5;
+}
+
+/* ====== SKILLS ====== */
+ul {
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
+}
+
+li {
+  background-color: #b30000;
+  color: white;
+  margin: 8px 0;
+  padding: 6px;
+}
